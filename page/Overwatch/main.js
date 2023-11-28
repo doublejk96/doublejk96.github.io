@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function ()
     const image = document.createElement('div');
     image.classList.add('image');
 
-    image.style.backgroundImage = `url("/image/overwatch/hero${i}.png")`;
+    image.style.backgroundImage = `url("./image/hero${i}.png")`;
 
     hero.appendChild(image);
     container.appendChild(hero);
