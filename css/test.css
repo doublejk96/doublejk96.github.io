@@ -39,3 +39,56 @@ td{
     color: blue;
     text-decoration: underline;  
 }
+
+/* 모든 요소 접근 */
+*{
+    color: black;
+}
+
+/* 동시에 만족하는 요소 접근 */
+span.red{
+    font-size: 32px;
+}
+
+/* 자식 요소 접근 */
+ul > .apple{
+    color: green;
+}
+
+/* 하위 요소 접근 */
+body .apple {
+    font-size: 32px;
+}
+
+/* 앞의 요소 다음 녀석을 선택 */
+.test1 + li{
+    font-size: 32px;
+}
+
+/* 앞의 요소 다음 녀석들을 모두 선택 */
+.test2 ~ li{
+    font-size: 32px;
+}
+
+.cIcon{
+    width: 100px;
+    height: 100px;
+
+    transition: 1s;
+}
+
+/* 마우스 올리면 */
+.cIcon:hover{
+    width: 200px;
+    height: 200px;
+}
+
+/* 클릭하고 있는 동안 */
+.cIcon:active{
+    background-color: red;
+}
+
+/* 선택 되면 */
+.cIcon:focus{
+    background-color: orange;
+}
