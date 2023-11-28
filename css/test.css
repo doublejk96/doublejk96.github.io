@@ -1,0 +1,41 @@
+body{
+    font-size: 16px;
+}
+
+div{
+}
+
+p{
+    color: gray;
+}
+
+span{
+}
+
+input{
+    width: 200px;
+}
+
+table{
+
+}
+
+tr{
+
+}
+
+td{
+    border:  1px solid red;
+    padding: 10px;
+}
+
+/* .을 이용해 클래스 접근 */
+.red{
+    color: red;
+}
+
+/* #을 이용해 id 접근 */
+#unique{
+    color: blue;
+    text-decoration: underline;  
+}
