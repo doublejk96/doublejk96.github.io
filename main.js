@@ -13,4 +13,3 @@ window.onload = function()
     const contents = document.querySelector('.contents');
     contents.style.maxHeight = window.innerHeight - 150 + 'px';
 };
-  
