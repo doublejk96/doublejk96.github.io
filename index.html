@@ -2,17 +2,123 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="DoubleJK">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoubleJK Blog</title>
 
-    <link rel="icon" href="./image/index/icon.svg">
-    <link rel="stylesheet" href="./css/index.css"/>
+    <title>김정진</title>
+
+    <!-- Reset -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css">
 
-    <script src="./js/main.js"></script>
+    <!-- JS -->
+    <script defer src="./main.js"></script>
+
 </head>
-<body>
-    <a href="./page/Overwatch/index.html">Overwatch</a>
+<body>    
+    <header class="header">
+        <ul class="navigation">
+            <li><a href="#" class="nav__item" onclick="showContent('info')">Info</a></li>
+            <li><a href="#" class="nav__item" onclick="showContent('about')">About</a></li>
+            <li><a href="#" class="nav__item" onclick="showContent('career')">Career</a></li>
+            <li><a href="#" class="nav__item" onclick="showContent('project')">Project</a></li> 
+        </ul>
+    </header>
+
+    <div class="contents">
+        <div id="info" class="content">            
+            <img src="./image/logo.png" alt="" class="photo">
+            <ul class="info">   
+                <li>김정진</li>
+                <br><div>- 인적사항 -</div><br>
+                <li>1996.07.01</li>
+                <li>게임 클라이언트 및 엔진 개발</li>
+                <li>휴대폰 :  010-9607-1593 </li>
+                <li>이메일 : koreadj96@naver.com</li>
+                <li>주&nbsp&nbsp&nbsp  소 :  경기도 광명시 덕단이로 현대아파트 136</li>
+                <br><div>- 학력 및 교육 - </div><br>
+                <li>2012.03 - 2015.02 명문고등학교 졸업</li>
+                <li>2015.03 - 2020.02 연성대학교 토목환경공학과 졸업</li>
+                <li>2020.05 - 2020.11 더 조은 아카데미 유니티 3D 게임 개발자 양성 과정 수료</li>
+                <li>2022.01 - 2023.05 쥬신 게임 아카데미 게임 프로그래밍 정규 취업 과정 수료</li>
+                <br><div>- 병역사항 -</div><br>
+                <li>2016.11 - 2018.07 중형 차량 운전병 육군 병장 만기 전역</li>
+                <br><div>- 보유 기술 -</div><br>
+                <li>유니티 언리얼 C/C++ C# DirectX hlsl</li>
+                <br><br>
+            </ul>
+        </div>
+
+        <div id="about" class="content">
+
+        </div>
+
+        <div id="career" class="content">
+
+        </div>
+
+        <div id="project" class="content active">
+            <ul class="projects">
+                <li class="project_item">
+                    <a href="https://doublejk96.notion.site/085479fc45694c48a7c8a094a6f808fc?pvs=4" target="_blank">
+                        <img src="./image/gif/skul.gif" alt="skul_gif" class="thumbnail">
+                        <div class="name">
+                            해골 서바이벌<br>
+                            Unity<br>
+                            2023.07
+                        </div>
+                    </a>
+                </li>
+
+                <li class="project_item">
+                    <a href="https://doublejk96.notion.site/c8ebb922505f4f229856b363be7c62bb?pvs=4" target="_blank">
+                        <img src="./image/gif/warhaven.gif" alt="warhaven_gif" class="thumbnail">
+                        <div class="name">
+                            워헤이븐<br>
+                            DirectX 11<br>
+                            2022.11 - 2023.02
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="project_item">
+                    <a href="https://doublejk96.notion.site/0a28720b769948fc98e7507937c3837b?pvs=4" target="_blank">
+                        <img src="./image/gif/whiteday.gif" alt="whiteday_gif" class="thumbnail">
+                        <div class="name">
+                            화이트데이<br>
+                            DirectX 11<br>
+                            2022.08 - 2022.10
+                        </div>
+                    </a>
+                </li>
+
+                <li class="project_item">
+                    <a href="https://doublejk96.notion.site/7d399deced8a4e0fa5dc3145a6aacf67?pvs=4" target="_blank">
+                        <img src="./image/gif/indieGame.gif" alt="indieGame_gif" class="thumbnail">
+                        <div class="name">
+                            인디 게임 레전드<br>
+                            DirectX 9<br>
+                            2022.06 - 2022.07
+                        </div>
+                    </a>
+                </li>
+
+                <li class="project_item">
+                    <a href="https://doublejk96.notion.site/2dd40e19355141348395759aeeb62a37?pvs=4" target="_blank">
+                        <img src="./image/gif/zelda.gif" alt="zelda_gif" class="thumbnail">
+                        <div class="name">
+                            젤다의 전설<br>
+                            WindowsAPI<br>
+                            2022.04
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
 </body>
 </html>

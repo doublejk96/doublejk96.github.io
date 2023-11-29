@@ -59,39 +59,6 @@ body
       background-repeat: no-repeat;
       background-size: 90px;
     }
-    
-    /* .hero:nth-child(1) .image { background-image: url("/image/overwatch/hero1.png"); }
-    .hero:nth-child(2) .image { background-image: url("/image/overwatch/hero2.png"); }
-    .hero:nth-child(3) .image { background-image: url("/image/overwatch/hero3.png"); }
-    .hero:nth-child(4) .image { background-image: url("/image/overwatch/hero4.png"); }
-    .hero:nth-child(5) .image { background-image: url("/image/overwatch/hero5.png"); }
-    .hero:nth-child(6) .image { background-image: url("/image/overwatch/hero6.png"); }
-    .hero:nth-child(7) .image { background-image: url("/image/overwatch/hero7.png"); }
-    .hero:nth-child(8) .image { background-image: url("/image/overwatch/hero8.png"); }
-    .hero:nth-child(9) .image { background-image: url("/image/overwatch/hero9.png"); }
-    .hero:nth-child(10) .image { background-image: url("/image/overwatch/hero10.png"); }
-    .hero:nth-child(11) .image { background-image: url("/image/overwatch/hero11.png"); }
-    .hero:nth-child(12) .image { background-image: url("/image/overwatch/hero12.png"); }
-    .hero:nth-child(13) .image { background-image: url("/image/overwatch/hero13.png"); }
-    .hero:nth-child(14) .image { background-image: url("/image/overwatch/hero14.png"); }
-    .hero:nth-child(15) .image { background-image: url("/image/overwatch/hero15.png"); }
-    .hero:nth-child(16) .image { background-image: url("/image/overwatch/hero16.png"); }
-    .hero:nth-child(17) .image { background-image: url("/image/overwatch/hero17.png"); }
-    .hero:nth-child(18) .image { background-image: url("/image/overwatch/hero18.png"); }
-    .hero:nth-child(19) .image { background-image: url("/image/overwatch/hero19.png"); }
-    .hero:nth-child(20) .image { background-image: url("/image/overwatch/hero20.png"); }
-    .hero:nth-child(21) .image { background-image: url("/image/overwatch/hero21.png"); }
-    .hero:nth-child(22) .image { background-image: url("/image/overwatch/hero22.png"); }
-    .hero:nth-child(23) .image { background-image: url("/image/overwatch/hero23.png"); }
-    .hero:nth-child(24) .image { background-image: url("/image/overwatch/hero24.png"); }
-    .hero:nth-child(25) .image { background-image: url("/image/overwatch/hero25.png"); }
-    .hero:nth-child(26) .image { background-image: url("/image/overwatch/hero26.png"); }
-    .hero:nth-child(27) .image { background-image: url("/image/overwatch/hero27.png"); }
-    .hero:nth-child(28) .image { background-image: url("/image/overwatch/hero28.png"); }
-    .hero:nth-child(29) .image { background-image: url("/image/overwatch/hero29.png"); }
-    .hero:nth-child(30) .image { background-image: url("/image/overwatch/hero30.png"); }
-    .hero:nth-child(31) .image { background-image: url("/image/overwatch/hero31.png"); }
-    .hero:nth-child(32) .image { background-image: url("/image/overwatch/hero32.png"); } */
   }
 
   .logo
