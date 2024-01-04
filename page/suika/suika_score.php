@@ -4,6 +4,13 @@
 	$password = "Wjdwls32!@";
 	$dbName = "kmeiguitar";
 	
+	// Allow from any origin
+	header('Access-Control-Allow-Origin: *');
+	// Allow methods: GET, POST, OPTIONS
+	header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+	// Allow headers: Content-Type
+	header('Access-Control-Allow-Headers: Content-Type');
+
 	$connect = mysqli_connect($host, $user,$password, $dbName);
 	if (!$connect) 
 		die("접속 실패 : ". mysqli_connect_error());
