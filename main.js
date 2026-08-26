@@ -78,10 +78,10 @@ function isMinePlacementForbidden(row, col)
     if (isTreasureCell(row, col) || isStartCell(row, col))
         return true;
 
-    // 출발지 기준 가로/세로 2칸 반경을 5x5 정사각 범위로 처리한다.
+    // 출발지 기준 가로/세로 각각 1칸 이내인 3x3 범위를 지뢰 설치 금지로 처리한다.
     return Object.values(DG_STARTS).some(function(start)
     {
-        return Math.abs(row - start.row) <= 2 && Math.abs(col - start.col) <= 2;
+        return Math.abs(row - start.row) <= 1 && Math.abs(col - start.col) <= 1;
     });
 }
 
