@@ -6,23 +6,18 @@
 
     <title>김정진</title>
 
-    <!-- Reset -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./deathgame.css">
 
-    <!-- JS -->
     <script defer src="./main.js"></script>
-
 </head>
-<body>    
+<body>
     <header class="header">
         <ul class="navigation">
             <li><a href="#" class="nav__item" onclick="showContent('about')">About</a></li>
             <li><a href="#" class="nav__item" onclick="showContent('project')">Project</a></li>
-            <li><a href="#" class="nav__item" onclick="showContent('deathgame')">데스게임</a></li>
+            <li><a href="#deathgame" class="nav__item" onclick="showContent('deathgame')">데스게임</a></li>
         </ul>
     </header>
 
@@ -30,8 +25,8 @@
         <div id="about" class="content active">
             <img src="./image/logo.png" alt="" class="photo">
             <div>김정진</div>
-            <div>게임 클라이언트 및 엔진 개발</div>       
-            <ul class="info">   
+            <div>게임 클라이언트 및 엔진 개발</div>
+            <ul class="info">
                 <br><p>- 인적사항 -</p><br>
                 <li>생년월일 : 1996.07.01</li>
                 <li>휴대폰 :  010-9607-1593 </li>
@@ -43,7 +38,7 @@
                 <li>2015.03 - 2020.02 : 연성대학교 토목환경공학과 졸업</li>
                 <li>2020.05 - 2020.11 : 더 조은 아카데미 유니티 3D 게임 개발자 양성 과정 수료</li>
                 <li>2022.01 - 2023.05 : 쥬신 게임 아카데미 게임 프로그래밍 정규 취업 과정 수료</li>
-                
+
                 <br><p>- 경력 - </p><br>
                 <li>2024.02 - 2024.04 : 엑스큐게임즈</li>
                 <li>수집형 RPG 게임 개발</li>
@@ -68,13 +63,13 @@
                 <br><li>2020.11 - 2022.02 : 플레이링크</li>
                 <li>AR 퍼즐 게임 개발</li>
                 <li>작업 환경 : C#, Unity, FireBase</li>
-                
+
                 <br><li>업무 내용</li>
                 <li>- 구글 맻 앱 스토어 정책 대응</li>
-                <li>- 게임 기본 로직 설계 및 구현 (리소스, 사운드, UI 등)</li>    
-                <li>- 싱글톤을 이용한 매니저 모듈화</li>    
-                <li>- 웹 데이터베이스를 이용한 읽고 쓰기 구현</li>    
-                <li>- 내비게이션 시스템 구현</li>    
+                <li>- 게임 기본 로직 설계 및 구현 (리소스, 사운드, UI 등)</li>
+                <li>- 싱글톤을 이용한 매니저 모듈화</li>
+                <li>- 웹 데이터베이스를 이용한 읽고 쓰기 구현</li>
+                <li>- 내비게이션 시스템 구현</li>
                 <li>- GPS 위치에 오브젝트 배치 구현</li>
                 <li>- 안면 인식을 이용한 페이스앱 구현</li>
                 <li>- 라이브 컨텐츠 개발 및 버그 수정</li>
@@ -90,102 +85,64 @@
                 <br><p>- 보유 기술 -</p>
                 <li>C/C++</li>
                 <li>- 게임 개발과 알고리즘 문제 풀이 경험을 통해 STL을 능숙하게 다룰 수 있습니다.</li>
-                
                 <br><li>C#</li>
                 <li>- 게임 개발과 알고리즘 문제 풀이 경험을 통해 STL을 능숙하게 다룰 수 있습니다.</li>
-                
                 <br><li>hlsl</li>
                 <li>- 게임에 셰이더를 적용하여 그래픽 효과를 추가할 수 있습니다.</li>
                 <li>- 구문 및 기능을 이해하고 디버깅에 능숙합니다.</li>
-                
                 <br><li>DirectX</li>
                 <li>- 프레임워크를 직접 제작하여 게임을 개발할 수 있습니다.</li>
-                
                 <br><li>유니티</li>
                 <li>- 엔진의 다양한 기능과 C# 언어를 혼합하여 게임을 개발할 수 있습니다.</li>
                 <li>- 게임에 광고를 추가할 수 있으며, 멀티 플레이도 개발할 수 있습니다.</li>
-                
                 <br><li>언리얼</li>
                 <li>- 블루 프린트 기능과 C++ 언어를 혼합하여 게임을 개발할 수 있습니다.</li>
                 <li>- 소스 엔진을 사용하여 게임을 개발하고 데디케이티드 서버를 구축할 수 있습니다.</li>
-                
                 <br><li>Git</li>
                 <li>- Git을 활용한 소스 코드 버전 관리 및 협업을 할 수 있습니다.</li>
                 <li>- Github를 사용하여 프로젝트 관리 경험이 있습니다.</li>
-                
                 <br><br>
             </ul>
         </div>
 
         <div id="project" class="content">
             <ul class="projects">
-
                 <li class="project_item">
                     <a href="/page/suika/index.html" target="_blank">
                         <img src="/image/gif/suika.gif" alt="suika_gif" class="thumbnail">
-                        <div class="name">
-                            행성 게임<br>
-                            Unity<br>
-                            2023.12
-                        </div>
+                        <div class="name">행성 게임<br>Unity<br>2023.12</div>
                     </a>
                 </li>
-
                 <li class="project_item">
                     <a href="https://doublejk96.notion.site/085479fc45694c48a7c8a094a6f808fc?pvs=4" target="_blank">
                         <img src="./image/gif/skul.gif" alt="skul_gif" class="thumbnail">
-                        <div class="name">
-                            해골 서바이벌<br>
-                            Unity<br>
-                            2023.07
-                        </div>
+                        <div class="name">해골 서바이벌<br>Unity<br>2023.07</div>
                     </a>
                 </li>
-
                 <li class="project_item">
                     <a href="https://doublejk96.notion.site/c8ebb922505f4f229856b363be7c62bb?pvs=4" target="_blank">
                         <img src="./image/gif/warhaven.gif" alt="warhaven_gif" class="thumbnail">
-                        <div class="name">
-                            워헤이븐<br>
-                            DirectX 11<br>
-                            2022.11 - 2023.02
-                        </div>
+                        <div class="name">워헤이븐<br>DirectX 11<br>2022.11 - 2023.02</div>
                     </a>
                 </li>
-                
                 <li class="project_item">
                     <a href="https://doublejk96.notion.site/0a28720b769948fc98e7507937c3837b?pvs=4" target="_blank">
                         <img src="./image/gif/whiteday.gif" alt="whiteday_gif" class="thumbnail">
-                        <div class="name">
-                            화이트데이<br>
-                            DirectX 11<br>
-                            2022.08 - 2022.10
-                        </div>
+                        <div class="name">화이트데이<br>DirectX 11<br>2022.08 - 2022.10</div>
                     </a>
                 </li>
-
                 <li class="project_item">
                     <a href="https://doublejk96.notion.site/6357a214ee234d9ab5b71b501c54f244?pvs=4" target="_blank">
                         <img src="./image/gif/indieGame.gif" alt="indieGame_gif" class="thumbnail">
-                        <div class="name">
-                            인디 게임 레전드<br>
-                            DirectX 9<br>
-                            2022.06 - 2022.07
-                        </div>
+                        <div class="name">인디 게임 레전드<br>DirectX 9<br>2022.06 - 2022.07</div>
                     </a>
                 </li>
-
                 <li class="project_item">
                     <a href="https://doublejk96.notion.site/f4e98efb74984b8ca1228902c22badc4?pvs=4" target="_blank">
                         <img src="./image/gif/zelda.gif" alt="zelda_gif" class="thumbnail">
-                        <div class="name">
-                            젤다의 전설<br>
-                            WindowsAPI<br>
-                            2022.04
-                        </div>
+                        <div class="name">젤다의 전설<br>WindowsAPI<br>2022.04</div>
                     </a>
                 </li>
-
             </ul>
         </div>
 
@@ -198,23 +155,23 @@
                     </div>
                     <div class="deathgame-status">
                         <span class="deathgame-status-dot"></span>
-                        BOARD PROTOTYPE
+                        <span id="deathgame-match-status">AI MATCHING</span>
                     </div>
                 </div>
 
                 <div class="deathgame-match-info">
-                    <div class="deathgame-player-card">
+                    <div class="deathgame-player-card human-player">
                         <span class="deathgame-player-label">PLAYER 1</span>
-                        <strong>대기 중</strong>
-                        <span>0 POINT</span>
+                        <strong id="player1-name">YOU</strong>
+                        <span id="player1-score">0 POINT</span>
                     </div>
 
                     <div class="deathgame-versus">VS</div>
 
-                    <div class="deathgame-player-card">
-                        <span class="deathgame-player-label">PLAYER 2</span>
-                        <strong>대기 중</strong>
-                        <span>0 POINT</span>
+                    <div class="deathgame-player-card ai-player">
+                        <span class="deathgame-player-label">PLAYER 2 · AI</span>
+                        <strong id="player2-name">연결 중...</strong>
+                        <span id="player2-score">0 POINT</span>
                     </div>
                 </div>
 
@@ -233,8 +190,6 @@
                 </div>
             </section>
         </div>
-
     </div>
-
 </body>
 </html>
