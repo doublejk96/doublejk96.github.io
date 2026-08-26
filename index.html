@@ -11,6 +11,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./deathgame.css">
 
     <!-- JS -->
     <script defer src="./main.js"></script>
@@ -20,7 +21,8 @@
     <header class="header">
         <ul class="navigation">
             <li><a href="#" class="nav__item" onclick="showContent('about')">About</a></li>
-            <li><a href="#" class="nav__item" onclick="showContent('project')">Project</a></li> 
+            <li><a href="#" class="nav__item" onclick="showContent('project')">Project</a></li>
+            <li><a href="#" class="nav__item" onclick="showContent('deathgame')">데스게임</a></li>
         </ul>
     </header>
 
@@ -185,6 +187,51 @@
                 </li>
 
             </ul>
+        </div>
+
+        <div id="deathgame" class="content">
+            <section class="deathgame-shell">
+                <div class="deathgame-header">
+                    <div>
+                        <p class="deathgame-eyebrow">ONLINE DEATH GAME</p>
+                        <h1>망각의 지뢰</h1>
+                    </div>
+                    <div class="deathgame-status">
+                        <span class="deathgame-status-dot"></span>
+                        BOARD PROTOTYPE
+                    </div>
+                </div>
+
+                <div class="deathgame-match-info">
+                    <div class="deathgame-player-card">
+                        <span class="deathgame-player-label">PLAYER 1</span>
+                        <strong>대기 중</strong>
+                        <span>0 POINT</span>
+                    </div>
+
+                    <div class="deathgame-versus">VS</div>
+
+                    <div class="deathgame-player-card">
+                        <span class="deathgame-player-label">PLAYER 2</span>
+                        <strong>대기 중</strong>
+                        <span>0 POINT</span>
+                    </div>
+                </div>
+
+                <div class="deathgame-board-wrapper">
+                    <div class="deathgame-column-labels" id="deathgame-column-labels"></div>
+                    <div class="deathgame-board-content">
+                        <div class="deathgame-row-labels" id="deathgame-row-labels"></div>
+                        <div class="deathgame-board-grid" id="deathgame-board-grid"></div>
+                    </div>
+                </div>
+
+                <div class="deathgame-footer">
+                    <span>11 × 11 BOARD</span>
+                    <span>◆ 보물</span>
+                    <span>● 출발점</span>
+                </div>
+            </section>
         </div>
 
     </div>
