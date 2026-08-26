@@ -1,6 +1,6 @@
-function showContent(contentId) 
+function showContent(contentId)
 {
-    document.querySelectorAll('.content').forEach(function(content) 
+    document.querySelectorAll('.content').forEach(function(content)
     {
         content.classList.remove('active');
     });
@@ -10,6 +10,37 @@ function showContent(contentId)
     {
         target.classList.add('active');
     }
+}
+
+const deathGameState = {
+    mode: 'solo-ai',
+    player1: {
+        name: 'YOU',
+        score: 0
+    },
+    player2: {
+        name: 'AI',
+        score: 0,
+        isAI: true
+    }
+};
+
+function connectSoloPlayerToAI()
+{
+    const status = document.getElementById('deathgame-match-status');
+    const player2Name = document.getElementById('player2-name');
+
+    if (!status || !player2Name)
+        return;
+
+    status.textContent = 'AI MATCHING';
+    player2Name.textContent = '연결 중...';
+
+    window.setTimeout(function()
+    {
+        player2Name.textContent = deathGameState.player2.name;
+        status.textContent = 'AI CONNECTED';
+    }, 500);
 }
 
 function renderDeathGameBoard()
@@ -53,9 +84,13 @@ function renderDeathGameBoard()
         {
             const cell = document.createElement('button');
             const coordinate = `${rowLabels[row]}${col + 1}`;
+
             cell.type = 'button';
             cell.className = 'deathgame-cell';
             cell.title = coordinate;
+            cell.dataset.row = row;
+            cell.dataset.col = col;
+            cell.dataset.coordinate = coordinate;
             cell.setAttribute('aria-label', coordinate);
 
             const coordinateLabel = document.createElement('span');
@@ -73,6 +108,7 @@ function renderDeathGameBoard()
             if (isTreasure)
             {
                 cell.classList.add('deathgame-treasure');
+
                 const symbol = document.createElement('span');
                 symbol.className = 'deathgame-cell-symbol deathgame-treasure-symbol';
                 symbol.textContent = '◆';
@@ -81,6 +117,7 @@ function renderDeathGameBoard()
             else if (isPlayer1Start || isPlayer2Start)
             {
                 cell.classList.add('deathgame-start');
+
                 const symbol = document.createElement('span');
                 symbol.className = 'deathgame-cell-symbol deathgame-start-symbol';
                 symbol.textContent = isPlayer1Start ? '1' : '2';
@@ -95,6 +132,7 @@ function renderDeathGameBoard()
 document.addEventListener('DOMContentLoaded', function()
 {
     renderDeathGameBoard();
+    connectSoloPlayerToAI();
 
     if (location.hash === '#deathgame')
         showContent('deathgame');
