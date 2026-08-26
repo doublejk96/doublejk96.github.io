@@ -12,90 +12,6 @@ function showContent(contentId)
     }
 }
 
-function createDeathGameBoard()
-{
-    const navigation = document.querySelector('.navigation');
-    const contents = document.querySelector('.contents');
-
-    if (!navigation || !contents || document.getElementById('deathgame'))
-        return;
-
-    const style = document.createElement('link');
-    style.rel = 'stylesheet';
-    style.href = './deathgame.css';
-    document.head.appendChild(style);
-
-    const menuItem = document.createElement('li');
-    const menuLink = document.createElement('a');
-    menuLink.href = '#deathgame';
-    menuLink.className = 'nav__item';
-    menuLink.textContent = '데스게임';
-    menuLink.addEventListener('click', function(event)
-    {
-        event.preventDefault();
-        showContent('deathgame');
-        history.replaceState(null, '', '#deathgame');
-    });
-
-    menuItem.appendChild(menuLink);
-    navigation.appendChild(menuItem);
-
-    const deathGame = document.createElement('div');
-    deathGame.id = 'deathgame';
-    deathGame.className = 'content';
-
-    deathGame.innerHTML = `
-        <section class="deathgame-shell">
-            <div class="deathgame-header">
-                <div>
-                    <p class="deathgame-eyebrow">ONLINE DEATH GAME</p>
-                    <h1>망각의 지뢰</h1>
-                </div>
-                <div class="deathgame-status">
-                    <span class="deathgame-status-dot"></span>
-                    BOARD PROTOTYPE
-                </div>
-            </div>
-
-            <div class="deathgame-match-info">
-                <div class="deathgame-player-card">
-                    <span class="deathgame-player-label">PLAYER 1</span>
-                    <strong>대기 중</strong>
-                    <span>0 POINT</span>
-                </div>
-
-                <div class="deathgame-versus">VS</div>
-
-                <div class="deathgame-player-card">
-                    <span class="deathgame-player-label">PLAYER 2</span>
-                    <strong>대기 중</strong>
-                    <span>0 POINT</span>
-                </div>
-            </div>
-
-            <div class="deathgame-board-wrapper">
-                <div class="deathgame-column-labels" id="deathgame-column-labels"></div>
-                <div class="deathgame-board-content">
-                    <div class="deathgame-row-labels" id="deathgame-row-labels"></div>
-                    <div class="deathgame-board-grid" id="deathgame-board-grid"></div>
-                </div>
-            </div>
-
-            <div class="deathgame-footer">
-                <span>11 × 11 BOARD</span>
-                <span>◆ 보물</span>
-                <span>● 출발점</span>
-            </div>
-        </section>
-    `;
-
-    contents.appendChild(deathGame);
-    renderDeathGameBoard();
-
-    if (location.hash === '#deathgame')
-        showContent('deathgame');
-}
-
 function renderDeathGameBoard()
 {
     const boardSize = 11;
@@ -106,6 +22,10 @@ function renderDeathGameBoard()
 
     if (!columnLabels || !rowLabelContainer || !board)
         return;
+
+    columnLabels.innerHTML = '';
+    rowLabelContainer.innerHTML = '';
+    board.innerHTML = '';
 
     const corner = document.createElement('div');
     corner.className = 'deathgame-corner-label';
@@ -172,4 +92,10 @@ function renderDeathGameBoard()
     }
 }
 
-document.addEventListener('DOMContentLoaded', createDeathGameBoard);
+document.addEventListener('DOMContentLoaded', function()
+{
+    renderDeathGameBoard();
+
+    if (location.hash === '#deathgame')
+        showContent('deathgame');
+});
